@@ -16,10 +16,16 @@ body{
 .roboto-bold{
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+.he{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-pic-btn{
@@ -40,8 +46,13 @@ body{
 .profile-pic-btn:active{
     opacity: 50%;
 }
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search-input{
-    width: 300px;
+    width: 600px;
     padding: 5px;
     height: 30px;
 }
@@ -59,26 +70,59 @@ body{
     grid-template-rows: 1fr 5fr;
 }
 .profile-font-large{
-    font-size: 800;
+    font-size: 30px;
 }
 .header-container{
     background-color: rgb(248, 241, 241);
     grid-column: 2/3;
     grid-row: 1/2;
 
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    
 }
 .top-header-container{
     display: flex;
     justify-content:space-around;
     align-items: center;
+    margin: 10px;
+    margin-bottom: 30px;
     /* gap: 300px; */
+}
+.top-header-container button{
+    background-color: rgb(248, 241, 241);
 }
 .bottom-header-container{
     display: flex;
     justify-content:space-around;
     align-items: center;
+}
+.search-icon{
+    width: 25px;
+    background-color: rgb(248, 241, 241);
+}
+.search-btn{
+    background-image: url("magnify.svg");
+}
+.notification-btn{
+    background-image: url("bell-ring-outline.svg");
+}
+
+.search-btn,
+.notification-btn{
+    background-size: cover;        /* Ensures the image fills the button entirely */
+    background-position: center;   /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents the image from tiling */
+    width: 40px;                  /* Explicit dimensions are usually required */
+    height: 40px;
+    border-radius: 50%;
+    border: none;    
+}
+.search-btn:hover,
+.notification-btn:hover{
+    background-color: rgba(255, 255, 255, 0.849);
+}
+.search-btn:active,
+.notification-btn:active{
+    background-color: rgb(255, 248, 248);
 }
 
 .nav ul{
